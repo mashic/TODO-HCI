@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(81, 55, 82);
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    min-height: 100vh;
+}
+
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+header {
+    background-color: black;
+    font-size: 15px;
+    margin-bottom: 10px;
+    height: 26px;
+}
+
+.wrapperHeader{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+}
+
+header #todaysDate{
+    margin-left: 15px;
+}
+
+#navIcons{
+    margin-right: 15px;
+}
+
+#overHeaderPanel{
+    height: 30px;
+    background-color: rgb(190, 190, 190);
+}
+
+.fa-cog, .fa-sticky-note, .fa-calendar{
+    padding: 0 5px 0 5px;
+    font-size: 21px;
+    margin-top: 2px;
+}
+
+
+#trakaDana{
+    text-align: center;
+}
+
+#trakaDana button{
+    width: 40px;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 1rem;
+    background: white;
+    color:black;
+    font-size: 1.0rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.todo li{
+    /*this moves the icons to the right side(eliminates the space between them)*/
+    flex: 1;  
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.todo .todo-title{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.todo .todo-date{
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 35px;
+    font-size: 10px;
+}
+
+.todo .todo-categ{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.trash-btn, .complete-btn{
+    background: #c94062 ;
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 15px;
+}
+
+.complete-btn{
+    background: #2abd85 ;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check{
+    /*this means that it can not be clicked on anymore*/
+    pointer-events:none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    /*disables all default styles of the select element*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:none;
+    border:none;
+    /*adding new styles*/
+    color:#2a93bd;
+    width:10rem;
+    cursor:pointer;
+    padding: 1rem;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after{
+    content:"\25BC";
+    position: absolute;
+    background:#2a93bd ;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after{
+    background: white;
+    color: #2a93bd;
+}
+
+#pocetna, #dodajNovi, #danas{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(190, 190, 190);
+    height: 100px;
+    width: 100%;
+    color: black;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 15px;
+}

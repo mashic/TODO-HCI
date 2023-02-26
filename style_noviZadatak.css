@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(81, 55, 82);
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    min-height: 100vh;
+}
+
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+header h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.todo-title,.todo-input{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: rgb(190, 190, 190);
+    
+}
+
+.todo-title{
+    height: 40px;
+}
+
+.todo-input{
+    /* height: 100px; */
+    padding: 20px 10px;
+    line-height: 70px;
+    width: 100%;
+}
+
+
+.todo-button{
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+}
+
+.choose-date{
+    background-color: rgb(190, 190, 190);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose-date input{
+    background-color: transparent;
+    width: 50%;
+    font-size: 20px;
+}
+
+#nodate{
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    width: 50%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#checkbox_nodate{
+    width:20%;
+}
+
+#nodate label{
+    width: 30%;
+}
+
+#kategorijaSelect{
+    margin-left: 40px;
+}
+
+.kategorija{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kategorija input{
+    margin-left: 55px;
+}
+
+/* select{
+    position: absolute;
+    margin-top: -100px;
+} */
+
+
+#kategorijalabel{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(81, 55, 82);
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    min-height: 100vh;
+}
+
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.zab-title,.zab-input{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: rgb(190, 190, 190);
+    
+}
+
+.zab-title{
+    height: 40px;
+}
+
+.zab-input{
+    height: 250px;
+    padding: 20px 10px;
+    line-height: 50px;
+    width: 90%;
+}
+
+
+.zab-button{
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+}
+.zab-button:hover{
+    cursor: pointer;
+}
+
+
+
+

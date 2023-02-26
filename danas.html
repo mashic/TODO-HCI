@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style_danas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Danas</title>
+</head>
+<body>
+    <div id="overHeaderPanel"></div>
+    <header>
+        <div class="wrapperHeader">
+            <span id="todaysDate"></span>
+            <div id="navIcons">
+                <i onclick="location.href='/zabiljeske/zabiljeske.html'" class="fa fa-sticky-note" aria-hidden="true"></i>
+                <i onclick="location.href='/kalendar/kalendar.html'" class="fa fa-calendar" aria-hidden="true"></i>
+                <i onclick="location.href='/postavke/postavke.html'" class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+    
+        <div id="trakaDana">
+            <button><span id="1" onclick="aktiviraj(this.id)">Danas</span></button>
+            <button><span id="2" onclick="aktiviraj(this.id)">Sutra</span></button>
+            <button><span id="3" onclick="aktiviraj(this.id)">1</span></button>
+            <button><span id="4" onclick="aktiviraj(this.id)">1</span></button>
+            <button><span id="5" onclick="aktiviraj(this.id)">1</span></button>
+            <button><span id="6" onclick="aktiviraj(this.id)">1</span></button>
+            <button><span id="7" onclick="aktiviraj(this.id)">1</span></button>
+        </div>
+        
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+    </div>
+        
+    <footer>
+        <div class="wrapper">
+            <div onclick="location.href='/pocetna.html'" id="pocetna">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                    <h3>početna</h3>
+            </div>
+            <div onclick="location.href='/noviZadatak.html'" id="dodajNovi">
+                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    <h3>dodajnovi</h3>
+            </div>
+            <div id="danas">
+                <i onclick="location.href='/danas.html'" class="fa fa-flag-checkered" aria-hidden="true"></i>
+                    <h3>danas</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/prikazTodoItema.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+</body>
+</html>

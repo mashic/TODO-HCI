@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novi zadatak</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/style_noviZadatak.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h1>Novi zadatak</h1>
+        </header>
+        <form>
+            <label for="todo-title"> Naslov : </label>
+            <input type="text" class="todo-title" placeholder="Naslov">
+            <label for="todo-input"> Opis : </label>
+            <input  type="text" class="todo-input" placeholder="Opis"  >
+            <label for="choose-date" > Odaberite datum : </label>
+            <div class="choose-date">
+                <input type="date" class="datePicker">
+                <div id=nodate>
+                    <label for="checkbox_nodate">Bez datuma</label>
+                    <input id="checkbox_nodate" type="checkbox">
+                </div>
+            </div>
+            <label for="kategorija" id="kategorijalabel" > Odaberite kategoriju : </label>
+            <div class="kategorija">
+                <select id="kategorijaSelect" name="kategorijaSelect">
+                    <option selected disabled value="0">Odaberite jednu od opcija</option>
+                    <option value="posao">Posao</option>
+                    <option value="licno">Lično</option>
+                    <option value="zabava">Zabava</option>
+                    <option value="ostalo">Ostalo</option>
+                </select>
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div> -->
+            </div>
+            <!-- <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div> -->
+        </form>
+
+        
+        <!-- <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div> -->
+        
+        <button class="todo-button" type="submit">+ dodaj</button>
+    </div>
+    
+    
+    
+    <script src="dodavanjeTodoItema.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+</body>
+</html>

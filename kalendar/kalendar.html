@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style_kalendar.css">
+    <title>Danas</title>
+    <link rel="shortcut icon" href="#">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div id="overHeaderPanel"></div>
+    <header>
+        <div class="wrapperHeader">
+            <span id="todaysDate"></span>
+            <span id="navIcons">
+                <span id="icon-notes">
+                    <i class="fa fa-sticky-note" aria-hidden="true"></i>
+                </span>
+                <span id="icon-calendar">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                </span>
+                <span id="icon-settings">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                </span>
+            </span>
+        </div>
+    </header>
+    <div class="wrapper">
+    
+        <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+          
+          <ul class="days">  
+            <li><span> </span></li>
+            <li><span> </span></li>
+            <li><span> </span></li>
+            <li><span> </span></li>
+            <li><span id="1" onclick="aktiviraj(this.id)">1</span></li>
+            <li><span id="2" onclick="aktiviraj(this.id)">2</span></li>
+            <li><span id="3" onclick="aktiviraj(this.id)">3</span></li>
+            <li><span id="4" onclick="aktiviraj(this.id)">4</span></li>
+            <li><span id="5" onclick="aktiviraj(this.id)">5</span></li>
+            <li><span id="6" onclick="aktiviraj(this.id)">6</span></li>
+            <li><span id="7" onclick="aktiviraj(this.id)">7</span></li>
+            <li><span id="8" onclick="aktiviraj(this.id)">8</span></li>
+            <li><span id="9" onclick="aktiviraj(this.id)">9</span></li>
+            <li><span id="10" onclick="aktiviraj(this.id)">10</span></li>
+            <li><span id="11" onclick="aktiviraj(this.id)">11</span></li>
+            <li><span id="12" onclick="aktiviraj(this.id)">12</span></li>
+            <li><span id="13" onclick="aktiviraj(this.id)">13</span></li>
+            <li><span id="14" onclick="aktiviraj(this.id)">14</span></li>
+            <li><span id="15" onclick="aktiviraj(this.id)">15</span></li>
+            <li><span id="16" onclick="aktiviraj(this.id)">16</span></li>
+            <li><span id="17" onclick="aktiviraj(this.id)">17</span></li>
+            <li><span id="18" onclick="aktiviraj(this.id)">18</span></li>
+            <li><span id="19" onclick="aktiviraj(this.id)">19</span></li>
+            <li><span id="20" onclick="aktiviraj(this.id)">20</span></li>
+            <li><span id="21" onclick="aktiviraj(this.id)">21</span></li>
+            <li><span id="22" onclick="aktiviraj(this.id)">22</span></li>
+            <li><span id="23" onclick="aktiviraj(this.id)">23</span></li>
+            <li><span id="24" onclick="aktiviraj(this.id)">24</span></li>
+            <li><span id="25" onclick="aktiviraj(this.id)">25</span></li>
+            <li><span id="26" onclick="aktiviraj(this.id)">26</span></li>
+            <li><span id="27" onclick="aktiviraj(this.id)">27</span></li>
+            <li><span id="28" onclick="aktiviraj(this.id)">28</span></li>
+            <li><span id="29" onclick="aktiviraj(this.id)">29</span></li>
+            <li><span id="30" onclick="aktiviraj(this.id)">30</span></li>
+            <li><span id="31" onclick="aktiviraj(this.id)">31</span></li>
+          </ul>
+          
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+        </div>
+        
+        <footer>
+            <div class="wrapper">
+                <div id="pocetna">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <h3>početna</h3>
+                </div>
+                <div id="dodajNovi">
+                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    <h3>dodajnovi</h3>
+                </div>
+                <div id="danas">
+                    <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+                    <h3>danas</h3>
+                </div>
+            </div>
+        </footer>
+
+    <script src="./kalendar.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+</body>
+</html>

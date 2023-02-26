@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Home</title>
+    <link rel="stylesheet" href="/style_pocetna.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h2>Postotak uspješnosti:</h2>
+        </header>
+        <div id="statsCircle">
+
+            <div class="card js">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="stats">
+            <div id="postavljeni">
+                <h3>Postavljeni</h3>
+                <span id="postavljeniNumber">15</span>
+            </div>
+            <div id="dovrseni">
+                <h3>Dovršeni</h3>
+                <span id="dovrseniNumber">15</span>
+            </div>
+            <div id="aktivni">
+                <h3>Aktivni</h3>
+                <span id="aktivniNumber">15</span>
+            </div>
+        </div>
+
+        <div id="sliders">
+            <div id="slider1">
+                <label for="kateg1">Posao:</label>
+                <progress id="kateg1" value="69" max="100"> </progress>
+            </div>
+            <div id="slider2">
+                <label for="kateg2">Lično:</label>
+                <progress id="kateg2" value="69" max="100"> </progress>
+            </div>
+            <div id="slider3">
+                <label for="kateg3">Zabava:</label>
+                <progress id="kateg3" value="69" max="100"> </progress>
+            </div>
+            <div id="slider4">
+                <label for="kateg4">Ostalo:</label>
+                <progress id="kateg4" value="69" max="100"> </progress>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <div onclick="location.href='/pocetna.html'" id="pocetna">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                    <h3>početna</h3>
+            </div>
+            <div onclick="location.href='/noviZadatak.html'" id="dodajNovi">
+                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    <h3>dodajnovi</h3>
+            </div>
+            <div id="danas">
+                <i onclick="location.href='/danas.html'" class="fa fa-flag-checkered" aria-hidden="true"></i>
+                    <h3>danas</h3>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/pocetna.js"></script>
+</body>
+
+</html>
